@@ -31,5 +31,10 @@ git status
 git add .
 git commit -m 'Some text'
 git push
+
 gh repo view --web
+
+git tag <name>
+git push --tags
+
 ````
