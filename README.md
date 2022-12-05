@@ -23,3 +23,13 @@ docker stop 67c89c8be389
 docker stop 67c
 
 ```
+
+## Git flow
+
+````
+git status
+git add .
+git commit -m 'Some text'
+git push
+gh repo view --web
+````
