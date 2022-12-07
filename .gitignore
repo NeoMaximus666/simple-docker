@@ -2,3 +2,4 @@ node_modules
 .idea
 .git
 .vscode
+docker-compose.example-override.yml

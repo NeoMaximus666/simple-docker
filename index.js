@@ -5,7 +5,7 @@ const port = 3000
 app.get('/', (req, res) => {
     console.log('Request incoming! :)')
 
-    res.send('Hello Simple Docker Express!')
+    res.send('Hello Simple Docker Express! reload ')
 })
 
 app.listen(port, () => {

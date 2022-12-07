@@ -56,9 +56,11 @@ docker stop 67c
 docker-compose
 docker-compose version
 docker-compose config
+docker-compose -f docker-compose.yml -f docker-compose.override.yml config
 docker-compose build
 docker-compose up
 docker-compose up --remove-orphans
+docker-compose up --build
 docker-compose start
 docker-compose stop
 docker-compose logs --follow
@@ -66,8 +68,24 @@ docker-compose down
 
 docker-compose exec <service_name> bash
 docker-compose exec webapp bash
+docker-compose run --rm webapp bash
 
 ```
+
+## Package manager
+
+[PM2](https://pm2.keymetrics.io/docs/usage/quick-start)
+or
+[pnpm](https://pnpm.io/installation)
+````
+npm install pm2@latest -g 
+// or
+npm install -g pnpm
+pnpm i
+pnpm i nodemon
+pnpm run dev
+
+````
 
 ## Git flow
 
@@ -98,6 +116,8 @@ apt update
 apt install nano
 nano i_was_here.txt
 cat i_was_here.txt
+
+rm -rf <folder>
 
 exit
 
