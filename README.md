@@ -93,6 +93,7 @@ pnpm run dev
 git status
 git add .
 git commit -m 'Some text'
+git rm -r --cached .pnpm-store
 git push
 
 gh repo view --web
